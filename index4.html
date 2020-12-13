@@ -9,7 +9,9 @@
     <div id="app">
       <!-- !Event handling -->
       {{counter}}
-      <button @click="increaseCounter">Increase</button>
+      <button @click.prevent="increaseCounter('CodeNerd', $event), sayHi()">
+        Increase
+      </button>
 
       <!-- !Conditional rendering -->
       <div v-if="isLoggedIn">
@@ -20,7 +22,6 @@
         <button>Sing Up</button>
       </div>
       <p v-show="isLoggedIn">i am logged in</p>
-      
     </div>
 
     <script src="app.js"></script>

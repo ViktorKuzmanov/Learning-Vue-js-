@@ -1,3 +1,5 @@
+const cl = console.log
+
 const app = Vue.createApp({
     data() {
         return {
@@ -8,8 +10,12 @@ const app = Vue.createApp({
       },
     
     methods: {
-      increaseCounter() {
+      increaseCounter(name,event) {
         this.counter += 1
+        cl(event)
+      },
+      sayHi() {
+        cl("hii")
       }
     }
   })

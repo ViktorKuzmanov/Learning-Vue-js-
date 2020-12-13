@@ -7,8 +7,20 @@
   </head>
   <body>
     <div id="app">
+      <!-- !Event handling -->
       {{counter}}
       <button @click="increaseCounter">Increase</button>
+
+      <!-- !Conditional rendering -->
+      <div v-if="isLoggedIn">
+        <p>Hello CodeNerd</p>
+      </div>
+      <div v-else>
+        <button>Log In</button>
+        <button>Sing Up</button>
+      </div>
+      <p v-show="isLoggedIn">i am logged in</p>
+      
     </div>
 
     <script src="app.js"></script>

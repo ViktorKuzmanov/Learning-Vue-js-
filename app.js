@@ -2,7 +2,8 @@ const app = Vue.createApp({
     data() {
         return {
           name: 'CodeNerd',
-          counter: 0
+          counter: 0,
+          isLoggedIn: true
         }
       },
     

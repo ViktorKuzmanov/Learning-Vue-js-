@@ -5,7 +5,8 @@ const app = Vue.createApp({
         return {
           name: 'CodeNerd',
           counter: 0,
-          isLoggedIn: true
+          isLoggedIn: true,
+          books: ["book1", "book2","book3",]
         }
       },
     

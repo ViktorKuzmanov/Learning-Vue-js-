@@ -22,6 +22,10 @@
         <button>Sing Up</button>
       </div>
       <p v-show="isLoggedIn">i am logged in</p>
+
+      <ul>
+        <li v-for="book in books">{{book}}</li>
+      </ul>
     </div>
 
     <script src="app.js"></script>

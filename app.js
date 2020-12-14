@@ -6,7 +6,8 @@ const app = Vue.createApp({
           name: 'CodeNerd',
           counter: 0,
           isLoggedIn: true,
-          books: ["book1", "book2","book3",]
+          books: ["book1", "book2","book3",],
+          priceOfBitcoin: 19100
         }
       },
     
@@ -18,7 +19,14 @@ const app = Vue.createApp({
       sayHi() {
         cl("hii")
       }
+    },
+
+    computed: {
+      bitCoinFor100() {
+        return 100 / this.priceOfBitcoin
+      }
     }
+
   })
   
   app.mount('#app')

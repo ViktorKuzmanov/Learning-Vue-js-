@@ -7,7 +7,9 @@
   </head>
   <body>
     <div id="app">
+      Bitcoin for $100: {{ bitCoinFor100 }}
       <!-- !Event handling -->
+      <br />
       {{counter}}
       <button @click.prevent="increaseCounter('CodeNerd', $event), sayHi()">
         Increase
